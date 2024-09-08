@@ -1,31 +1,65 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+# name: Deploy to VPS BACKEND_040824
 
-name: Node.js CI
+# on:
+#   push:
+#     branches: [ "main" ]
+#   pull_request:
+#     branches: [ "main" ]
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+#     timeout-minutes: 60
+#     steps:
+#     - name: Checkout code
+#       uses: actions/checkout@v4
 
-jobs:
-  build:
+#     # - name: Display GitHub Username
+#     #   run: echo "Repository:" ${{ github.repository }}
 
-    runs-on: ubuntu-latest
+#     # - name: Display actor Name
+#     #   run: echo "Actor:" ${{ github.actor }}
 
-    strategy:
-      matrix:
-        node-version: [18.x, 20.x, 22.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+#     # - name: Display server VPS_IP
+#     #   run: echo "VPS_IP:" ${{ secrets.VPS_IP }}
 
-    steps:
-    - uses: actions/checkout@v4
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
+#     # - name: Display server VPS_PASSWORD
+#     #   run: echo "VPS_PASSWORD:" ${{ secrets.VPS_PASSWORD }}
+
+#     - name: SSH to VPS and update project
+#       uses: appleboy/ssh-action@master
+#       with:
+#         host: ${{ secrets.VPS_IP }}
+#         username: ${{ secrets.VPS_USERNAME }}
+#         password: ${{ secrets.VPS_PASSWORD }}  # Sử dụng nếu bạn dùng mật khẩu cho SSH
+#         # key: ${{ secrets.VPS_SSH_KEY }}  # Sử dụng nếu bạn dùng khóa SSH
+#         script: |
+#           echo "Checking if the project directory exists..."
+#           if [ -d "/root/backend_040824" ]; then
+#             echo "Tồn tại thư mục dự án"
+#             cd /root/backend_040824
+      
+#             git pull
+#             docker-compose -f docker-compose-api-backend_040824.yml up -d --build         
+#           else          
+#             echo "Không hề tồn tại thư mục dự án"
+#             mkdir -p /root/backend_040824
+#             cd /root/backend_040824
+
+#             git clone https://github.com/${{ github.repository }} /root/backend_040824
+#             docker-compose -f docker-compose-api-backend_040824.yml up -d
+#           fi
+#           echo "Hoàn thành công việc update API backend_040824. Chúc mừng bạn đã hoàn thành"
+
+        # script: |
+        #   echo "Xoa thu muc du an"
+        #   rm -rf /root/backend_040824
+        #   echo "Xoa images and container"
+          
+        #   docker stop $(docker ps -aq) || true
+        #   docker rm $(docker ps -aq) || true
+        #   docker rmi $(docker images -q) || true
+        #   docker-compose -f docker-compose-api-backend_040824.yml down
+        #   docker system prune -a -f
+        #   sudo systemctl restart docker
+        #   echo "Xoa du an 1"
