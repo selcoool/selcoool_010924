@@ -27,7 +27,7 @@ const ScrollMenu = () => {
     return (
 
         <div className='w-[80%] mx-auto mb-[2rem]'>
-            <h1 className='text-blue-500 font-extrabold text-[2.5rem]'>My Projects:</h1>
+            <h1 className='text-blue-500 font-extrabold text-[1.8rem] md:text-[2.5rem]'>My Projects:</h1>
             <Carousel
 
                 centerMode={false}

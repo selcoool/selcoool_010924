@@ -4,7 +4,7 @@ import React from 'react';
 const MenuProduct = () => {
   return (
     <div className="w-[80%] mx-auto mb-[2rem]">
-    <h1 className='text-purple-600 font-extrabold text-[2.5rem]'>Outstanding Features:</h1>
+    <h1 className='text-purple-600 font-extrabold text-[1.8rem] md:text-[2.5rem]'>Outstanding Features:</h1>
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[1rem]">
       <div className="relative bg-slate-600 w-full h-[14rem] cursor-pointer group">
         <Image
