@@ -24,13 +24,11 @@ jobs:
         script: |
           # Check if the project directory exists
           if [ -d "/root/selcoool_010924" ]; then
-            # echo "Directory exists. Removing it..."
-            # rm -rf /root/selcoool_010924
-            # mkdir -p /root/selcoool_010924
-            # cd /root/selcoool_010924
-            # git clone https://github.com/${{ github.repository }} /root/selcoool_010924
-
-            git pull https://github.com/${{ github.repository }}
+            echo "Directory exists. Removing it..."
+            rm -rf /root/selcoool_010924
+            mkdir -p /root/selcoool_010924
+            cd /root/selcoool_010924
+            git clone https://github.com/${{ github.repository }} /root/selcoool_010924
             if [ -f ".next.zip" ]; then
             unzip .next.zip -d ./
             fi
