@@ -38,12 +38,14 @@ jobs:
             rm -rf /root/selcoool_010924
             git clone https://github.com/${{ github.repository }} /root/selcoool_010924
             unzip .next.zip -d ./
+            docker-compose -f docker-compose-selcoool_010924.yml up -d --build
             cd ~
             docker-compose -f docker-compose-nginx.yml restart nginx
            
          else
             git clone https://github.com/${{ github.repository }} /root/selcoool_010924
             unzip .next.zip -d ./
+            docker-compose -f docker-compose-selcoool_010924.yml up -d --build
             cd ~
             docker-compose -f docker-compose-nginx.yml restart nginx
 
