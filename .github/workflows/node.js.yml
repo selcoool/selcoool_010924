@@ -34,10 +34,13 @@ jobs:
         password: ${{ secrets.VPS_PASSWORD }}  # Sử dụng nếu bạn dùng mật khẩu cho SSH
         # key: ${{ secrets.VPS_SSH_KEY }}  # Sử dụng nếu bạn dùng khóa SSH
         script: |
-
+         if [ -d "/root/selcoool_010924" ]; then
            rm -rf /root/selcoool_010924
            
+         else
+           git clone https://github.com/${{ github.repository }} /root/selcoool_010924
 
+         fi
           # if [ -d "/root/selcoool_010924" ]; then
           #   echo "Project directory exists"
           #   cd /root/selcoool_010924
