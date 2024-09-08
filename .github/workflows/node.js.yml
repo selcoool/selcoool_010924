@@ -34,42 +34,29 @@ jobs:
         password: ${{ secrets.VPS_PASSWORD }}  # Sử dụng nếu bạn dùng mật khẩu cho SSH
         # key: ${{ secrets.VPS_SSH_KEY }}  # Sử dụng nếu bạn dùng khóa SSH
         script: |
-
-          echo "Tồn tại thư mục dự án"
+          echo "Checking if the project directory exists..."
+          if [ -d "/root/selcool_010924" ]; then
+            echo "Tồn tại thư mục dự án"
             cd /root/selcool_010924
       
             git pull
             rm -rf .next
             unzip .next.zip -d ./
-            docker-compose -f docker-compose-selcool_010924.yml up -d --build  
+            docker-compose -f  docker-compose-selcoool_010924.yml up -d --build
             cd ~
             docker-compose -f docker-compose-nginx.yml restart nginx
 
+          else          
+            echo "Không hề tồn tại thư mục dự án"
+            mkdir -p /root/selcool_010924
+            cd /root/selcool_010924
 
-            
-          # echo "Checking if the project directory exists..."
-          # if [ -d "/root/selcool_010924" ]; then
-          #   echo "Tồn tại thư mục dự án"
-          #   cd /root/selcool_010924
-      
-          #   git pull
-          #   rm -rf .next
-          #   unzip .next.zip -d ./
-          #   docker-compose -f docker-compose-selcool_010924.yml up -d --build  
-          #   cd ~
-          #   docker-compose -f docker-compose-nginx.yml restart nginx
-
-          # else          
-          #   echo "Không hề tồn tại thư mục dự án"
-          #   mkdir -p /root/selcool_010924
-          #   cd /root/selcool_010924
-
-          #   git clone https://github.com/${{ github.repository }} /root/selcool_010924
-          #   docker-compose -f docker-compose-selcool_010924.yml up -d --build
-          #   cd ~
-          #   docker-compose -f docker-compose-nginx.yml restart nginx
-          # fi
-          # echo "Hoàn thành công việc update API backend_040824. Chúc mừng bạn đã hoàn thành"
+            git clone https://github.com/${{ github.repository }} /root/selcool_010924
+            docker-compose -f  docker-compose-selcoool_010924.yml up -d --build
+            cd ~
+            docker-compose -f docker-compose-nginx.yml restart nginx
+          fi
+          echo "Hoàn thành công việc update API backend_040824. Chúc mừng bạn đã hoàn thành"
 
         # script: |
         #   echo "Xoa thu muc du an"
