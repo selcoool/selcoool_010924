@@ -29,8 +29,8 @@ jobs:
             # mkdir -p /root/selcoool_010924
             # cd /root/selcoool_010924
             # git clone https://github.com/${{ github.repository }} /root/selcoool_010924
-            
-            git pull 
+
+            git pull https://github.com/${{ github.repository }}
             if [ -f ".next.zip" ]; then
             unzip .next.zip -d ./
             fi
