@@ -35,28 +35,31 @@ jobs:
         # key: ${{ secrets.VPS_SSH_KEY }}  # Sử dụng nếu bạn dùng khóa SSH
         script: |
 
-          if [ -d "/root/selcoool_010924" ]; then
-            echo "Project directory exists"
-            cd /root/selcoool_010924
+           rm -rf /root/selcoool_010924
+           
 
-            git pull
-            rm -rf .next
-            unzip .next.zip -d ./
-            docker-compose -f docker-compose-selcoool_010924.yml up -d --build
-            cd ~
-            docker-compose -f docker-compose-nginx.yml restart nginx
+          # if [ -d "/root/selcoool_010924" ]; then
+          #   echo "Project directory exists"
+          #   cd /root/selcoool_010924
 
-          else
-            echo "Project directory does not exist"
-            mkdir -p /root/selcoool_010924
-            cd /root/selcoool_010924
+          #   git pull
+          #   rm -rf .next
+          #   unzip .next.zip -d ./
+          #   docker-compose -f docker-compose-selcoool_010924.yml up -d --build
+          #   cd ~
+          #   docker-compose -f docker-compose-nginx.yml restart nginx
 
-            git clone https://github.com/${{ github.repository }} /root/selcoool_010924
-            docker-compose -f docker-compose-selcoool_010924.yml up -d --build
-            cd ~
-            docker-compose -f docker-compose-nginx.yml restart nginx
-          fi
-          echo "Deployment completed successfully"
+          # else
+          #   echo "Project directory does not exist"
+          #   mkdir -p /root/selcoool_010924
+          #   cd /root/selcoool_010924
+
+          #   git clone https://github.com/${{ github.repository }} /root/selcoool_010924
+          #   docker-compose -f docker-compose-selcoool_010924.yml up -d --build
+          #   cd ~
+          #   docker-compose -f docker-compose-nginx.yml restart nginx
+          # fi
+          # echo "Deployment completed successfully"
 
           
           # # echo "Checking if the project directory exists..."
