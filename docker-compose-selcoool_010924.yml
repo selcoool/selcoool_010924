@@ -1,0 +1,14 @@
+services:
+  selcoool_010924:
+    container_name: selcoool_010924
+    restart: always
+    build:
+      context: ./
+    # ports:
+    #   - "3000:3000"
+    networks:
+      - root_rent_room_network
+
+networks:
+  root_rent_room_network:
+    external: true
