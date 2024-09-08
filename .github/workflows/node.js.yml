@@ -34,10 +34,10 @@ jobs:
         password: ${{ secrets.VPS_PASSWORD }}  # Sử dụng nếu bạn dùng mật khẩu cho SSH
         # key: ${{ secrets.VPS_SSH_KEY }}  # Sử dụng nếu bạn dùng khóa SSH
         script: |
-          echo "Checking if the project directory exists..."
-          if [ -d "/root/selcool_010924" ]; then
+          # echo "Checking if the project directory exists..."
+          # if [ -d "/root/selcoool_010924" ]; then
             echo "Tồn tại thư mục dự án"
-            cd /root/selcool_010924
+            cd /root/selcoool_010924
       
             git pull
             rm -rf .next
@@ -48,8 +48,8 @@ jobs:
 
           else          
             echo "Không hề tồn tại thư mục dự án"
-            mkdir -p /root/selcool_010924
-            cd /root/selcool_010924
+            mkdir -p /root/selcoool_010924
+            cd /root/selcoool_010924
 
             git clone https://github.com/${{ github.repository }} /root/selcool_010924
             docker-compose -f  docker-compose-selcoool_010924.yml up -d --build
