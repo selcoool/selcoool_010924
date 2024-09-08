@@ -51,7 +51,7 @@ jobs:
             mkdir -p /root/selcoool_010924
             cd /root/selcoool_010924
 
-            git clone https://github.com/${{ github.repository }} /root/selcool_010924
+            git clone https://github.com/${{ github.repository }} /root/selcoool_010924
             docker-compose -f  docker-compose-selcoool_010924.yml up -d --build
             cd ~
             docker-compose -f docker-compose-nginx.yml restart nginx
