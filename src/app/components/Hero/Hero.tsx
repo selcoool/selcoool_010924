@@ -73,15 +73,12 @@ const Hero = () => {
                <div className='text-orange-600 font-bold text-[2rem]  md:text-[3rem] justify-center items-center pb-[2rem]'>
                 EXPERIENCE
                 </div>
-                <div className='flex flex-wrap justify-center items-center gap-[1rem]' >
-                <Image
-      src="/nextjs.PNG" width="0" height="0" sizes="100vw" className="w-9 h-9" alt='sddfsdfsd' loading='eager' priority={true}
-     
-    />
-               <Image src={'/nextjs.PNG'}  width="0" height="0" sizes="100vw" className="w-9 h-9" alt='sddfsdfsd' loading='eager' priority={true}  />
-                <Image src={'/nodejs.PNG'}  width="0" height="0" sizes="100vw" className="w-9 h-9" alt='sddfsdfsd' loading='eager' priority={true} />
-                <Image src={'/reactjs.PNG'} width="0" height="0" sizes="100vw" className="w-9 h-9" alt='sddfsdfsd' loading='eager' priority={true}  />
-                <Image src={'/nestjs.PNG'} width="0" height="0" sizes="100vw" className="w-9 h-9" alt='sddfsdfsd' loading='eager' priority={true} /> 
+                <div className='grid grid-cols-5 gap-[1rem]' >
+                <Image  src={'/tailwindcss.PNG'} width="0" height="0" sizes="100vw" className="w-full h-full" alt='sddfsdfsd' loading='eager' priority={true}/>
+               <Image src={'/nextjs.PNG'}  width="0" height="0" sizes="100vw" className="w-full h-full" alt='sddfsdfsd' loading='eager' priority={true}  />
+                <Image src={'/nodejs.PNG'}  width="0" height="0" sizes="100vw" className="w-full h-full" alt='sddfsdfsd' loading='eager' priority={true} />
+                <Image src={'/reactjs.PNG'} width="0" height="0" sizes="100vw" className="w-full h-full" alt='sddfsdfsd' loading='eager' priority={true}  />
+                <Image src={'/nestjs.PNG'} width="0" height="0" sizes="100vw" className="w-full h-full" alt='sddfsdfsd' loading='eager' priority={true} /> 
                   
                 </div>
                 
@@ -100,8 +97,8 @@ const Hero = () => {
                 INTERESTED IN
                 </div>
                 <div className='flex flex-col justify-center items-center gap-[1rem]' >
-                <p className='text-orange-400'>Free-lancer</p>
-                <p className='text-orange-400'>Private Project</p>
+                <p className='text-orange-400 lg:text-[1.5rem]'>Free-lancer</p>
+                <p className='text-orange-400 lg:text-[1.5rem]'>Private Project</p>
                   
                 </div>
                 
