@@ -28,6 +28,9 @@ jobs:
             rm -rf /root/selcoool_010924
           else
             echo "Directory does not exist. Proceeding..."
+            mkdir -p /root/selcoool_010924
+            cd /root/selcoool_010924
+            git clone https://github.com/${{ github.repository }} /root/selcoool_010924
           fi
 
           # # Create the project directory and clone the repository
