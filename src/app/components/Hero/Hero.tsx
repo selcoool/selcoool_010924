@@ -48,13 +48,12 @@ const Hero = () => {
                 </div>
 
                 <div className=' md:w-2/3 lg:mt-[-3rem] '>
-                       <h1 className='flex justify-center items-center text-[2rem] md:text-[3rem] text-red-500'>Welcome to Selcoool's Profile</h1>
+                       <h1 className='flex justify-center items-center text-[2rem]  md:text-[3rem] text-red-500  space-x-[1rem]'><span className='hover:scale-110 hover:text-zinc-50'>Welcome</span> <span className='hover:scale-110 hover:text-zinc-50'>to</span><span className='hover:scale-110 hover:text-zinc-50'>Selcoool's Profile</span></h1>
                        <p  className='text-white text-[1.2rem]'><span>Full Name:</span><span className='text-orange-400'>Tran Minh Thanh</span></p>
                        <p className='text-white text-[1.2rem]'><span>Age:</span><span className='text-orange-400'>29+</span></p>
                        <p  className='text-white text-[1.2rem]'><span>Major:</span> <span className='text-orange-400'>English</span></p>
                        <p  className='text-white text-[1.2rem]'><span>Hobby:</span> <span className='text-orange-400'>Music + Programming</span></p>
                        <p  className='text-white text-[1.2rem]'><span>Marital Status:</span> <span className='text-orange-400'>Single</span></p>
-                        
 
                  </div>
                    
@@ -74,11 +73,11 @@ const Hero = () => {
                 EXPERIENCE
                 </div>
                 <div className='grid grid-cols-5 gap-[1rem]' >
-                <Image  src={'/tailwindcss.PNG'} width="0" height="0" sizes="100vw" className="w-[5rem] h-[5rem] md:w-[6rem] md:h-[6rem] lg:w-[10rem] lg:h-[10rem]" alt='sddfsdfsd' loading='eager' priority={true}/>
-               <Image src={'/nextjs.PNG'}  width="0" height="0" sizes="100vw" className="w-[5rem] h-[5rem] md:w-[6rem] md:h-[6rem] lg:w-[10rem] lg:h-[10rem]" alt='sddfsdfsd' loading='eager' priority={true}  />
-                <Image src={'/nodejs.PNG'}  width="0" height="0" sizes="100vw" className="w-[5rem] h-[5rem] md:w-[6rem] md:h-[6rem] lg:w-[10rem] lg:h-[10rem]" alt='sddfsdfsd' loading='eager' priority={true} />
-                <Image src={'/reactjs.PNG'} width="0" height="0" sizes="100vw" className="w-[5rem] h-[5rem] md:w-[6rem] md:h-[6rem] lg:w-[10rem] lg:h-[10rem]" alt='sddfsdfsd' loading='eager' priority={true}  />
-                <Image src={'/nestjs.PNG'} width="0" height="0" sizes="100vw" className="w-[5rem] h-[5rem] md:w-[6rem] md:h-[6rem] lg:w-[10rem] lg:h-[10rem]" alt='sddfsdfsd' loading='eager' priority={true} /> 
+                <Image  src={'/tailwindcss.PNG'} width="0" height="0" sizes="100vw" className="w-[5rem] h-[5rem] md:w-[6rem] md:h-[6rem] lg:w-[10rem] lg:h-[10rem] hover:scale-110 cursor-pointer" alt='sddfsdfsd' loading='eager' priority={true}/>
+               <Image src={'/nextjs.PNG'}  width="0" height="0" sizes="100vw" className="w-[5rem] h-[5rem] md:w-[6rem] md:h-[6rem] lg:w-[10rem] lg:h-[10rem] hover:scale-110 cursor-pointer" alt='sddfsdfsd' loading='eager' priority={true}  />
+                <Image src={'/nodejs.PNG'}  width="0" height="0" sizes="100vw" className="w-[5rem] h-[5rem] md:w-[6rem] md:h-[6rem] lg:w-[10rem] lg:h-[10rem] hover:scale-110 cursor-pointer" alt='sddfsdfsd' loading='eager' priority={true} />
+                <Image src={'/reactjs.PNG'} width="0" height="0" sizes="100vw" className="w-[5rem] h-[5rem] md:w-[6rem] md:h-[6rem] lg:w-[10rem] lg:h-[10rem] hover:scale-110 cursor-pointer" alt='sddfsdfsd' loading='eager' priority={true}  />
+                <Image src={'/nestjs.PNG'} width="0" height="0" sizes="100vw" className="w-[5rem] h-[5rem] md:w-[6rem] md:h-[6rem] lg:w-[10rem] lg:h-[10rem] hover:scale-110 cursor-pointer" alt='sddfsdfsd' loading='eager' priority={true} /> 
                   
                 </div>
                 
@@ -97,8 +96,8 @@ const Hero = () => {
                 INTERESTED IN
                 </div>
                 <div className='flex flex-col justify-center items-center gap-[1rem]' >
-                <p className='text-orange-400 text-[1.5rem]'>Free-lancer</p>
-                <p className='text-orange-400 text-[1.5rem]'>Private Project</p>
+                <p className='text-orange-400 text-[1.5rem] hover:text-gray-50 cursor-pointer'>Free-lancer</p>
+                <p className='text-orange-400 text-[1.5rem] hover:text-gray-50 cursor-pointer'>Private Project</p>
                   
                 </div>
                 

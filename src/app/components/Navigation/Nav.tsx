@@ -32,17 +32,17 @@ const Nav = ({showNav,setShowNav}:Props) => {
       <div className='flex items-center space-x-2'>
              <Image src="/avatar.jpg" alt="avatar.jpg" width="0" height="0" sizes="100vw" loading='eager' priority={true} className='rounded-full hover:scale-110 cursor-pointer w-9 h-9'/>
              {/* <PiBinoculars data-aos="fade-right" data-aos-anchor-placement="top-center"  className='w-[1.7rem] h-[1.7rem] sm:w-[2rem] sm:h-[2rem] font-bold text-orange-500 hover:text-emerald-600 hover:scale-110 cursor-pointer'/> */}
-             <h1 data-aos="fade-top" data-aos-delay="400" data-aos-anchor-placement="top-center" className='text-[20px] sm:text-[30px] font-bold text-green-500'>Selcoool</h1>
+             <h1 data-aos="fade-top" data-aos-delay="400" data-aos-anchor-placement="top-center" className='text-[20px] sm:text-[30px] font-bold text-green-500'>  <Link href="/" >Selcoool</Link></h1>
       </div>
          {/* Nav Link */}
 
      
         <ul className='hidden lg:flex items-center  space-x-10'>
             <li data-aos="fade-left" data-aos-delay="200"  data-aos-anchor-placement="top-center" className='text-[20px] font-medium hover:text-red-600 '>
-               <Link href="/" className='flex items-center justify-center gap-1'><FaBook className='text-purple-600' />Skills</Link>
+               <Link href="/skills" className='flex items-center justify-center gap-1'><FaBook className='text-purple-600' />Skills</Link>
             </li>
             <li data-aos="fade-left" data-aos-delay="400" data-aos-anchor-placement="top-center" className='text-[20px] font-medium hover:text-red-600 '>
-               <Link href="/" className='flex items-center justify-center gap-1'><MdWork className='text-purple-600'  />Jobs</Link>
+               <Link href="/works" className='flex items-center justify-center gap-1'><MdWork className='text-purple-600'  />Works</Link>
             </li>
             {/* <li data-aos="fade-left" data-aos-delay="600" data-aos-anchor-placement="top-center" className='text-[20px] font-medium hover:text-red-600 0'>
                <Link href="/" className='flex items-center justify-center gap-1'><FaNewspaper className='text-purple-600' />News</Link>

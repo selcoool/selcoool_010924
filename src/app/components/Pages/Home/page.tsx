@@ -21,8 +21,8 @@ import * as fbq from '../../../../lib/fbpixel';
 
 const HomePage = () => {
     // State to handle modal visibility
-    const [showContactHomePage, setShowContactHomePage] = useState(false);
-    const [showRegisterHomePage, setShowRegisterHomePage] = useState(false);
+    // const [showContactHomePage, setShowContactHomePage] = useState(false);
+    // const [showRegisterHomePage, setShowRegisterHomePage] = useState(false);
 
 
     // Initialize AOS
