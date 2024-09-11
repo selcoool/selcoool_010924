@@ -21,7 +21,7 @@ const ModalContactHomePage = () => {
   return (
     <div className='relative z-[30] flex justify-center w-full h-full  '>
       {isOpenModalContactHomePage && (
-        <div id='wrapper' onClick={handleCloseModal} className='fixed z-10 flex justify-center pt-20 top-0 bottom-0  w-full h-full'>
+        <div id='wrapper' onClick={handleCloseModal} className='fixed z-10 flex justify-center pt-[10rem] top-0 bottom-0  w-full h-full'>
           <div className='w-fit h-fit pt-4'>
             <form className='w-fit h-fit bg-red-500 px-4 shadow-md hover:shadow-slate-400 rounded-lg'>
               <div className='flex items-center justify-center gap-3 relative'>

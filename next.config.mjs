@@ -1,9 +1,20 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-        domains: ['example.com'], // Add your allowed image domains here
-        formats: ['image/avif', 'image/webp'], // Supported formats
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'example.com',
+        port: '',  // if you have a custom port, you can specify it here
+        pathname: '/images/**',  // allows all images under the `/images` path
       },
+      {
+        protocol: 'https',
+        hostname: 'another-domain.com',
+        pathname: '/assets/**',  // allows all images under the `/assets` path
+      },
+    ],
+  },
 
     reactStrictMode: true,
 

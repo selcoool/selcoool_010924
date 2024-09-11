@@ -142,11 +142,11 @@ const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     <div className='w-[80%] mx-auto mb-[2rem]'>
       <div className='flex flex-col space-y-[1rem]'>
        
-        <p><span className='text-blue-600'>Your current address</span>: {address || 'Loading...'}</p>
+        <p> {address || 'Loading...'}</p>
         {position && selectedPosition && <p>Distance: {distance} km</p>}
         {position ? (
           <div className='relative flex justify-center '>
-              <input type="text" placeholder="Enter your address..." onChange={handleSearch} className='absolute z-[9999] w-[15rem] md:w-[30rem] outline-none border rounded-md h-[2rem] px-2 ring-2 bottom-0 right-0' />
+              <input type="text" placeholder="Enter your address..." onChange={handleSearch} className='absolute z-[9999] w-[15rem] md:w-[30rem] outline-none border  h-[2rem] px-2 ring-2 bottom-0 right-0' />
           <MapContainer center={position} zoom={14} style={{ height: '500px', width: '100%' }} >
            
             <TileLayer

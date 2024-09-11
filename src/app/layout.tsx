@@ -1,9 +1,10 @@
 // app/layout.tsx
-
 import type { Metadata } from 'next';
 import { Dancing_Script } from 'next/font/google';
 import './globals.css';
 import StoreProvider from './storeProvider/StoreProvider';
+
+
 
 // Importing Google Fonts
 const dancingScript = Dancing_Script({
@@ -28,6 +29,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
+
+
   return (
 
       <html lang="en">
@@ -48,7 +52,7 @@ export default function RootLayout({
                   s.parentNode.insertBefore(t,s)}(window, document,'script',
                   'https://connect.facebook.net/en_US/fbevents.js');
                 fbq('init', '980884502489134');
-                fbq('track', 'PageView');
+                // fbq('track', 'PageView');
               `,
             }}
           />

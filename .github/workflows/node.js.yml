@@ -34,9 +34,11 @@ jobs:
             fi
             # Build and start the Docker containers
             docker-compose -f docker-compose-selcoool_010924.yml up -d --build
+            docker system prune -f
             # Restart Nginx
             cd ~
             docker-compose -f docker-compose-nginx.yml restart nginx
+
           else
             echo "Directory does not exist. Proceeding..."
             mkdir -p /root/selcoool_010924
@@ -47,6 +49,7 @@ jobs:
             fi
             # Build and start the Docker containers
             docker-compose -f docker-compose-selcoool_010924.yml up -d --build
+            docker system prune -f
             # Restart Nginx
             cd ~
             docker-compose -f docker-compose-nginx.yml restart nginx

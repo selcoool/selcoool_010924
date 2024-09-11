@@ -74,11 +74,11 @@ const Hero = () => {
                 EXPERIENCE
                 </div>
                 <div className='grid grid-cols-5 gap-[1rem]' >
-                <Image  src={'/tailwindcss.PNG'} width="0" height="0" sizes="100vw" className="w-full h-full" alt='sddfsdfsd' loading='eager' priority={true}/>
-               <Image src={'/nextjs.PNG'}  width="0" height="0" sizes="100vw" className="w-full h-full" alt='sddfsdfsd' loading='eager' priority={true}  />
-                <Image src={'/nodejs.PNG'}  width="0" height="0" sizes="100vw" className="w-full h-full" alt='sddfsdfsd' loading='eager' priority={true} />
-                <Image src={'/reactjs.PNG'} width="0" height="0" sizes="100vw" className="w-full h-full" alt='sddfsdfsd' loading='eager' priority={true}  />
-                <Image src={'/nestjs.PNG'} width="0" height="0" sizes="100vw" className="w-full h-full" alt='sddfsdfsd' loading='eager' priority={true} /> 
+                <Image  src={'/tailwindcss.PNG'} width="0" height="0" sizes="100vw" className="w-[5rem] h-[5rem] md:w-[6rem] md:h-[6rem] lg:w-[10rem] lg:h-[10rem]" alt='sddfsdfsd' loading='eager' priority={true}/>
+               <Image src={'/nextjs.PNG'}  width="0" height="0" sizes="100vw" className="w-[5rem] h-[5rem] md:w-[6rem] md:h-[6rem] lg:w-[10rem] lg:h-[10rem]" alt='sddfsdfsd' loading='eager' priority={true}  />
+                <Image src={'/nodejs.PNG'}  width="0" height="0" sizes="100vw" className="w-[5rem] h-[5rem] md:w-[6rem] md:h-[6rem] lg:w-[10rem] lg:h-[10rem]" alt='sddfsdfsd' loading='eager' priority={true} />
+                <Image src={'/reactjs.PNG'} width="0" height="0" sizes="100vw" className="w-[5rem] h-[5rem] md:w-[6rem] md:h-[6rem] lg:w-[10rem] lg:h-[10rem]" alt='sddfsdfsd' loading='eager' priority={true}  />
+                <Image src={'/nestjs.PNG'} width="0" height="0" sizes="100vw" className="w-[5rem] h-[5rem] md:w-[6rem] md:h-[6rem] lg:w-[10rem] lg:h-[10rem]" alt='sddfsdfsd' loading='eager' priority={true} /> 
                   
                 </div>
                 

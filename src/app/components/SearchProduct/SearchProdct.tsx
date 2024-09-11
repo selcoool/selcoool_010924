@@ -3,7 +3,7 @@ import { CiSearch } from 'react-icons/ci';
 
 const SearchProdct = () => {
   return (
-    <div className="w-[80%] h-[25vh] mx-auto mb-[2rem] bg-slate-400">
+    <div className="w-[80%] h-[25vh] mx-auto mb-[2rem] bg-slate-300">
       <div className="w-full h-full flex flex-col justify-center items-center">
         <h1 className="text-[1.5rem] text-blue-600 md:text-[2rem] text-center mb-4">
           WHAT ARE YOU LOOKING FOR, MY FRIENDS?
