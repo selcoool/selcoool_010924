@@ -19,7 +19,7 @@ const ModalContactHomePage = () => {
 
 
   return (
-    <div className='relative z-[30] flex justify-center w-full h-full  '>
+    <div className='relative z-[9999] flex justify-center w-full h-full '>
       {isOpenModalContactHomePage && (
         <div id='wrapper' onClick={handleCloseModal} className='fixed z-10 flex justify-center pt-[10rem] top-0 bottom-0  w-full h-full'>
           <div className='w-fit h-fit pt-4'>
@@ -34,18 +34,18 @@ const ModalContactHomePage = () => {
 
               <div className='flex items-center justify-center gap-3'>
                   <label>Title:</label>
-                  <input type='text' className='flex-1 focus:outline-none px-2 p-1 rounded-lg cursor-pointer' placeholder='Nhập tên tài khoản' />
+                  <input type='text' className='flex-1 focus:outline-none px-2 p-1 rounded-lg cursor-pointer' placeholder='Enter your account name' />
                 </div>
 
                 <div className='flex items-center justify-center gap-3'>
                   <label>Nick Name or Full Name:</label>
-                  <input type='text' className='flex-1 focus:outline-none px-2 p-1 rounded-lg cursor-pointer' placeholder='Nhập tên tài khoản' />
+                  <input type='text' className='flex-1 focus:outline-none px-2 p-1 rounded-lg cursor-pointer' placeholder='Enter your name' />
                 </div>
 
 
                 <div className='flex items-center justify-center gap-3'>
                                 <label >Description:</label>
-                                <textarea   className=' flex-1 focus:outline-none px-2 p-1 rounded-lg cursor-pointer' placeholder='Nhập mô tả' ></textarea>
+                                <textarea   className=' flex-1 focus:outline-none px-2 p-1 rounded-lg cursor-pointer' placeholder='Type your request' ></textarea>
                 </div>
 
                

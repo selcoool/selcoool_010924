@@ -29,7 +29,7 @@ const ModalRegisterHomePage = () => {
     if (!isOpenModalRegisterHomePage) return null;
 
   return (
-    <div className='relative z-[30] flex justify-center w-full h-full'>
+    <div className='relative z-[9999] flex justify-center w-full h-full'>
     {isOpenModalRegisterHomePage && (
         <div id='wrapper' onClick={handleCloseModal} className='fixed z-10 flex justify-center pt-[10rem] top-0 bottom-0 w-full h-full'>
             <div className='w-fit h-fit pt-4'>
@@ -42,23 +42,23 @@ const ModalRegisterHomePage = () => {
 
                     <div className='flex flex-col gap-3 pb-5 pt-5 h-fit w-fit overflow-auto no-scrollbar'>
                         <div className='flex items-center justify-center gap-3'>
-                            <label htmlFor="name">Nick Name or Full Name:</label>
-                            <input id="name" type='text' className='flex-1 focus:outline-none px-2 p-1 rounded-lg cursor-pointer' placeholder='Nhập họ tên' />
+                            <label htmlFor="name">Full Name:</label>
+                            <input id="name" type='text' className='flex-1 focus:outline-none px-2 p-1 rounded-lg cursor-pointer' placeholder='Enter your name' />
                         </div>
 
                         <div className='flex items-center justify-center gap-3'>
                             <label htmlFor="account">Email:</label>
-                            <input id="account" type='text' className='flex-1 focus:outline-none px-2 p-1 rounded-lg cursor-pointer' placeholder='Nhập tên tài khoản' />
+                            <input id="account" type='text' className='flex-1 focus:outline-none px-2 p-1 rounded-lg cursor-pointer' placeholder='Enter your email' />
                         </div>
 
                         <div className='flex items-center justify-center gap-3'>
                                 <label >Description:</label>
-                                <textarea   className=' flex-1 focus:outline-none px-2 p-1 rounded-lg cursor-pointer' placeholder='Nhập mô tả' ></textarea>
+                                <textarea   className=' flex-1 focus:outline-none px-2 p-1 rounded-lg cursor-pointer' placeholder='Type your request' ></textarea>
                             </div>
 
                         <div className='flex items-center justify-center gap-3'>
                             <label htmlFor="file">Relevant Files:</label>
-                            <input  type="file" className='flex-1 focus:outline-none px-2 p-1 rounded-lg cursor-pointer' />
+                            <input  type="file" className='flex-1 focus:outline-none px-2 p-1 rounded-lg cursor-pointer max-w-[15rem]' />
                         </div>
 
 
@@ -67,6 +67,8 @@ const ModalRegisterHomePage = () => {
                         </div>
                     </div>
                 </form>
+
+
             </div>
         </div>
     )}

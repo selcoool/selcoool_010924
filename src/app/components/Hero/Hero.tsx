@@ -49,11 +49,11 @@ const Hero = () => {
 
                 <div className=' md:w-2/3 lg:mt-[-3rem] '>
                        <h1 className='flex justify-center items-center text-[2rem] md:text-[3rem] text-red-500'>Welcome to Selcoool's Profile</h1>
-                       <p  className='text-white'><span>Full Name:</span><span className='text-orange-400'>Tran Minh Thanh</span></p>
-                       <p className='text-white'><span>Age:</span><span className='text-orange-400'>29+</span></p>
-                       <p  className='text-white'><span>Major:</span> <span className='text-orange-400'>English</span></p>
-                       <p  className='text-white'><span>Hobby:</span> <span className='text-orange-400'>Music + Programming</span></p>
-                       <p  className='text-white'><span>Marital Status:</span> <span className='text-orange-400'>Single</span></p>
+                       <p  className='text-white text-[1.2rem]'><span>Full Name:</span><span className='text-orange-400'>Tran Minh Thanh</span></p>
+                       <p className='text-white text-[1.2rem]'><span>Age:</span><span className='text-orange-400'>29+</span></p>
+                       <p  className='text-white text-[1.2rem]'><span>Major:</span> <span className='text-orange-400'>English</span></p>
+                       <p  className='text-white text-[1.2rem]'><span>Hobby:</span> <span className='text-orange-400'>Music + Programming</span></p>
+                       <p  className='text-white text-[1.2rem]'><span>Marital Status:</span> <span className='text-orange-400'>Single</span></p>
                         
 
                  </div>
@@ -97,8 +97,8 @@ const Hero = () => {
                 INTERESTED IN
                 </div>
                 <div className='flex flex-col justify-center items-center gap-[1rem]' >
-                <p className='text-orange-400 lg:text-[1.5rem]'>Free-lancer</p>
-                <p className='text-orange-400 lg:text-[1.5rem]'>Private Project</p>
+                <p className='text-orange-400 text-[1.5rem]'>Free-lancer</p>
+                <p className='text-orange-400 text-[1.5rem]'>Private Project</p>
                   
                 </div>
                 

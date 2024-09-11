@@ -14,7 +14,7 @@ const Footer = () => {
                 <h1 className='text-[20px] sm:text-[22px] font-bold uppercase text-emerald-400'>Infor</h1>
           </div>
           <p className='text-white opacity-60 mt-[0.4rem]'>
-           I want to seek a job which I'm flexible to manage to work. I appreciate it if someone can recommend me a good deal !
+          I'm looking for an opportunity working in IT section. I appreciate it if you can recommend me a good one. Thank you very much !
           </p>
            <p className='mt-[1rem] text-white'>
            trmthanh220895@gmail.com
