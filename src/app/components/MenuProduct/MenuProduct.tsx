@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
+
 const MenuProduct = () => {
   return (
     <div className="w-[80%] mx-auto mb-[2rem]">
@@ -30,6 +31,7 @@ const MenuProduct = () => {
                 Buy
               </div>
             </div>
+            <h3 className='text-[1rem] md:text-[1.5rem] text-red-500 pb-[1rem] font-extrabold pt-[2rem]'>100$</h3>
           </div>
         </div>
       </div>
@@ -58,6 +60,7 @@ const MenuProduct = () => {
                 Buy
               </div>
             </div>
+            <h3 className='text-[1rem] md:text-[1.5rem] text-red-500 pb-[1rem] font-extrabold pt-[2rem]'>100$</h3>
           </div>
         </div>
       </div>
@@ -89,6 +92,7 @@ const MenuProduct = () => {
                 Buy
               </div>
             </div>
+            <h3 className='text-[1rem] md:text-[1.5rem] text-red-500 pb-[1rem] font-extrabold pt-[2rem]'>100$</h3>
           </div>
         </div>
       </div>

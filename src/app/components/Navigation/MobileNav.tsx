@@ -53,7 +53,7 @@ const MobileNav = ({ showNav, setShowNav }: Props) => {
         <li className={`text-[20px] font-medium hover:text-red-600 ${
         pathname === '/works' ? 'text-red-600' : ''} `}>
           <Link href="/works" className='flex items-center justify-center gap-1'>
-            <MdBedroomParent className='text-purple-600' /> Jobs
+            <MdBedroomParent className='text-purple-600' /> Works
           </Link>
         </li>
        
