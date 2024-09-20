@@ -16,6 +16,7 @@ import SearchProdct from '../../SearchProduct/SearchProdct';
 import { sha256 } from 'js-sha256';
 
 import * as fbq from '../../../../lib/fbpixel';
+import VideoList from '../../VideoList/VideoList';
 
 
 
@@ -116,6 +117,7 @@ const triggerFormCompleteRegistration = async () => {
       <ScrollMenu />
      <MenuProduct/>
      <SearchProdct/>
+     <VideoList/>
        <MapGoogle/>
       <Footer/>
 

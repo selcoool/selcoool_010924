@@ -5,6 +5,7 @@ import ModalRegisterHomePage from '../../Modals/ModalRegisterHomePage'
 import Footer from '../../Footer/page'
 import ScrollMenu from '../../ScrollMenu/ScrollMenu'
 import MenuProduct from '../../MenuProduct/MenuProduct'
+import VideoList from '../../VideoList/VideoList'
 
 const WorksPage = () => {
   return (
@@ -12,7 +13,7 @@ const WorksPage = () => {
       <ResponsiveNav />
       <MenuProduct/>
       <ScrollMenu />
-   
+      <VideoList/>
       <Footer/>
 
       <ModalContactHomePage  />
