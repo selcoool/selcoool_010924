@@ -30,7 +30,7 @@ const HomePage = () => {
         AOS.init({
             duration: 1000,
             easing: "ease",
-            once: false,
+            once: true,
             anchorPlacement: "top-center"
         });
     }, []);

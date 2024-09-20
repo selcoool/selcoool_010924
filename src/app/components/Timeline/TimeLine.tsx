@@ -35,7 +35,7 @@ const TimeLine = () => {
         {timelineData.map((event, index) => (
           <div key={index} className='flex flex-col md:flex-row items-center mb-12 relative w-full'>
             {/* Event content */}
-            <div className={`w-full md:w-[40%] bg-white p-4 rounded-md shadow-md ${index % 2 === 0 ? 'mr-auto text-left' : 'ml-auto text-right'} max-w-[95%] md:max-w-none`}>
+            <div data-aos={index % 2 === 0 ? 'fade-left' : 'fade-right'} data-aos-delay={600*index} data-aos-anchor-placement={index % 2 === 0 ? 'fade-middle' : 'fade-middle'} className={`w-full md:w-[40%] bg-white p-4 rounded-md shadow-md ${index % 2 === 0 ? 'mr-auto text-left' : 'ml-auto text-right'} max-w-[95%] md:max-w-none`}>
               <h3 className='text-[1rem] md:text-[1.5rem] font-semibold text-blue-500 pt-[1rem] pb-[1rem]'>{event.title}</h3>
               <p className='text-[0.8rem] md:text-[1rem] text-pink-500'>{event.date}</p>
               <p className='mt-2 text-[0.8rem] md:text-[0.9rem] text-gray-700'>{event.description}</p>
